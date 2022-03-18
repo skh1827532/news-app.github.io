@@ -1,0 +1,171 @@
+<html lang="en">
+
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../static/style2.css">
+
+    <title> Welcome To Pakistan News</title>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <a class="navbar-brand" href="#">Pakistani News Channel</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="/" id="homePage">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="/contact" id="contactPage">Contact Us<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="/about" id="contactPage">About<span class="sr-only">(current)</span></a>
+            </li>
+            
+            
+          </ul>
+          
+        </div>
+      </nav>
+    <div 
+      id="success"m
+      class="alert alert-success container my-3 alert-dismissible fade"
+      role="alert"
+    >
+      <strong>Success!</strong>
+      Your suggestions have been successfully submitted
+      <button
+        type="button"
+        class="close"
+        data-dismiss="alert"
+        aria-label="Close"
+      >
+        <span aria-hidden="true">×</span>
+      </button>
+    </div>
+    <div
+      id="failure"
+      class="alert alert-danger alert-dismissible fade"
+      role="alert"
+    >
+      <strong>Error!</strong>
+      Your suggestions have not been sent due to errors
+      <button
+        type="button"
+        class="close"
+        data-dismiss="alert"
+        aria-label="Close"
+      >
+        <span aria-hidden="true">×</span>
+      </button>
+    </div>
+    <div class="container">
+      <h1>Suggestion desk</h1>
+      <form action="/contact" method="post">
+        <div class="form-group">
+          <label for="name">Username</label>
+          <input
+            type="text"
+            class="form-control"
+            id="name"
+            name="userName"
+            placeholder="Enter your username"
+          />
+          <small id="namevalid" class="form-text text-muted invalid-feedback">
+            Your username must be 2-10 characters long and should not start with
+            a number
+          </small>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email address</label>
+          <input
+            type="text"
+            class="form-control"
+            id="email"
+            placeholder="Enter your email"
+            name="email"
+          />
+          <small id="emailvalid" class="form-text text-muted invalid-feedback">
+            Your email must be a valid email
+          </small>
+        </div>
+        <!-- <div class="form-group">
+                <label for="car">Select your car</label>
+                <select class="form-control" id="car" name="car">
+                    <option>Omni</option>
+                    <option>Maruti 800</option>
+                    <option>Ford Titanium</option>
+                    <option>Audi A4</option>
+                </select>
+            </div> -->
+        <div class="form-group">
+          <label for="address">Enter your address</label>
+          <textarea
+            class="form-control"
+            name="address"
+            id="address"
+            rows="3"
+          ></textarea>
+        </div>
+        <div class="form-group">
+          <label for="phone">Enter your phone number</label>
+          <input class="form-control" name="phone" id="phone" rows="3" />
+          <small id="emailvalid" class="form-text text-muted invalid-feedback">
+            Your phone number must be 11 digit long
+          </small>
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlTextarea1">Your Suggestions...</label>
+          <textarea
+            class="form-control"
+            id="exampleFormControlTextarea1"
+            rows="3"
+            name="textArea"
+          ></textarea>
+        </div>
+        <!-- <button id=  action="post">Submit</button> -->
+        <input type="submit" value="SUBMIT" class="btn btn-primary">
+      </form>
+
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../static/index2.js"></script>
+  </body>
+
+</html>
+

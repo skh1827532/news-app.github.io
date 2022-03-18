@@ -1,0 +1,141 @@
+
+
+ #newsAccordion{
+   display: flex;
+   flex-direction: row;
+   
+   }
+
+
+  .card{
+    display: inline-block;
+    width: 400px;
+    height: 500px;
+    overflow: auto;
+  }
+   
+  #anchorTag{
+    color: red;
+    font-weight: bold;
+
+  }
+  #anchorTag:hover{
+    color: rgb(0, 116, 77);
+    font-style: italic;
+
+
+  }
+
+  .span{
+    width: 30px;
+    height: 20px;
+
+  }
+
+  #left{
+   position: relative;
+   animation-name: Sanjay;
+  animation-duration: 01s;   
+  animation-iteration-count: infinite;
+  
+
+  }
+  #notificationVar{
+   
+   animation-name: Sanjay3;
+  animation-duration: 01s;   
+  animation-iteration-count: infinite;
+  color: brown;
+  text-align: center;
+  position: relative;
+  margin-top: 40vh;
+  font-size: 30px;
+  font-family: 'Courier New', Courier, monospace;
+  visibility: visible;
+  
+
+  }
+ 
+
+
+
+
+
+
+  #right{
+   position: relative;
+   animation-name: Sanjay2;
+  animation-duration: 01s;   
+  animation-iteration-count: infinite;
+ 
+
+
+  }
+
+
+  @keyframes Sanjay {
+       from{
+          position: relative;
+          left:0px;
+           
+       }
+       to{
+         position: relative;
+          left:10px;
+           
+       }
+       
+   }
+
+ 
+  @keyframes Sanjay2 {
+       from{
+          position: relative;
+          right:0px;
+           
+       }
+       to{
+         position: relative;
+          right:10px;
+           
+       }
+       
+   }
+  
+  @keyframes Sanjay3 {
+       0%{
+         color:red;
+         
+       }
+       
+       25%{
+         color:rgb(255, 0, 221);
+
+       }
+       50%{
+         color:rgb(0, 217, 255);
+
+       }
+       75%{
+         color:rgb(49, 42, 22);
+
+       }
+       100%{
+         color: blueviolet;
+
+       }
+       
+   }
+  
+
+
+   #homePage:hover{
+     color: blue;
+     text-decoration: underline;
+   }
+   
+   #contactPage:hover{
+     color: blue;
+     text-decoration: underline;
+   }
+   

@@ -1,0 +1,46 @@
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Calibri;
+            outline: none;
+            text-decoration: none;
+            background-size: auto;
+            /* background: red; */
+            
+            
+
+        }
+        body{
+           
+            height: 100vh;
+            /* text-align: center; */
+            /* display: flex; */
+            /* justify-content: center; */
+            /* align-items: center;s */
+
+        }
+        h1{
+            /* background: black; */
+            width: 0ch;
+            overflow: hidden;
+            white-space: nowrap;
+            animation: text 6s steps(46) infinite alternate;
+            border-right: 3px solid rgb(0, 255, 42);
+            margin: auto;
+           
+            font-size: 40px;
+
+            color: brown;            
+        }
+
+        @keyframes text {
+            0%{
+                width: 0ch;
+            }
+            50%{
+                width: 46ch;
+            }
+            
+        }
